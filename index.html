@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bangladesh Cyber Squad</title>
+  <style>
+    /* Background pattern */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #0f0f0f;
+      color: #f1f1f1;
+      background-image:
+        radial-gradient(circle at 20% 20%, #001f3f 1px, transparent 1px),
+        radial-gradient(circle at 80% 80%, #001f3f 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #001f3f, #0074D9);
+      text-align: center;
+      padding: 2rem 1rem;
+      box-shadow: 0 4px 15px #0074D9cc;
+    }
+
+    header img {
+      width: 160px;
+      border-radius: 50%;
+      box-shadow:
+        0 0 10px #00ffffcc,
+        0 0 20px #00ffff99,
+        0 0 30px #00ffff66;
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.1) rotate(5deg);
+    }
+
+    h1 {
+      color: #00ffcc;
+      font-size: 2.8rem;
+      margin-top: 1rem;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 5px #00ffccaa, 0 0 10px #00ffccaa;
+      }
+      to {
+        text-shadow: 0 0 20px #00ffccee, 0 0 30px #00ffccee, 0 0 40px #00ffccee;
+      }
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #d1faff;
+      font-weight: 600;
+    }
+
+    section {
+      padding: 2rem 2rem 3rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      color: #00c4ff;
+      border-bottom: 3px solid #00c4ff;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 2rem;
+      position: relative;
+      animation: slideIn 1s ease forwards;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    section p {
+      line-height: 1.8;
+      font-size: 1.1rem;
+      color: #e6faff;
+      margin-bottom: 1rem;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .image-grid img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow:
+        0 0 10px #008080aa,
+        0 0 15px #00ffffbb;
+      border: 3px solid transparent;
+      transition: transform 0.4s ease, border-color 0.4s ease;
+    }
+
+    .image-grid img:hover {
+      transform: scale(1.05);
+      border-color: #00ffffcc;
+    }
+
+    ul.tips-list {
+      list-style: none;
+      padding-left: 0;
+      color: #e6faff;
+      line-height: 1.9;
+    }
+
+    ul.tips-list li {
+      position: relative;
+      padding-left: 2.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    /* Custom bullet icon for tips */
+    ul.tips-list li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #00ffcc;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
+      border-top: 1px solid #222;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      section {
+        padding: 1.5rem 1rem 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="1000140149.jpg" alt="Bangladesh Cyber Squad Logo" />
+    <h1>Bangladesh Cyber Squad</h1>
+    <p>We Protect Our Country 🇧🇩</p>
+  </header>
+
+  <section>
+    <h2>What is Cyber Security?</h2>
+    <p>
+      Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These attacks aim to access,
+      alter, or destroy sensitive data, disrupt services, or extort money. Effective cybersecurity reduces the risk of cyber threats
+      and defends against unauthorized exploitation of systems and technologies.
+    </p>
+    <p>
+      It involves tools and practices such as firewalls, antivirus software, encryption, two-factor authentication, and regular security
+      audits to keep data and infrastructure safe.
+    </p>
+    <div class="image-grid">
+      <img src="https://i.imgur.com/yv6S3Zp.jpg" alt="Cybersecurity Concept" />
+      <img src="https://i.imgur.com/Hn8GZxX.jpg" alt="Cyber Defense Image" />
+    </div>
+  </section>
+
+  <section>
+    <h2>How People Are Attacked by Cyber Crime</h2>
+    <p>
+      Cybercriminals use techniques like phishing emails, fake websites, malicious apps, social engineering, and weak passwords to trick people
+      and gain access to personal information. Victims may suffer financial losses, identity theft, or even blackmail. Staying informed and
+      cautious is crucial to prevent such attacks.
+    </p>
+    <p>
+      Other attack vectors include ransomware, keyloggers, spyware, and data breaches. Cybercriminals may exploit public Wi-Fi, outdated software,
+      or careless user behavior to carry out their attacks.
+    </p>
+    <div class="image-grid">
+      <img src="https://i.imgur.com/T2TFuXk.jpg" alt="Phishing Email Illustration" />
+      <img src="https://i.imgur.com/VUfa6wB.jpg" alt="Hacker at Work" />
+    </div>
+  </section>
+
+  <section>
+    <h2>About Bangladesh Cyber Squad</h2>
+    <p>
+      We are a national digital defense team composed of ethical hackers, developers, and cybersecurity experts. Our mission is to create
+      awareness, educate the public, and help secure digital spaces across Bangladesh. We believe in protecting our nation’s data and infrastructure
+      from cyber threats, one byte at a time.
+    </p>
+    <p>
+      Bangladesh Cyber Squad collaborates with law enforcement, educational institutions, and online platforms to combat cybercrime. We conduct awareness
+      programs, cybersecurity workshops, and offer free consultancy for individuals affected by cyber threats.
+    </p>
+    <div class="image-grid">
+      <img src="https://i.imgur.com/6KpZmPr.jpg" alt="Cybersecurity Team Collaboration" />
+      <img src="https://i.imgur.com/QBfkszY.jpg" alt="Code and Cybersecurity" />
+    </div>
+  </section>
+
+  <section>
+    <h2>Tips to Stay Safe Online</h2>
+    <ul class="tips-list">
+      <li>Use strong, unique passwords and change them regularly.</li>
+      <li>Enable two-factor authentication wherever possible.</li>
+      <li>Do not click on suspicious links or attachments in emails.</li>
+      <li>Keep your operating system and software up to date.</li>
+      <li>Avoid using public Wi-Fi for sensitive transactions.</li>
+      <li>Regularly back up your important data.</li>
+    </ul>
+  </section>
+
+  <footer>
+    &copy; 2025 Bangladesh Cyber Squad. All rights reserved.
+  </footer>
+</body>
+</html>
